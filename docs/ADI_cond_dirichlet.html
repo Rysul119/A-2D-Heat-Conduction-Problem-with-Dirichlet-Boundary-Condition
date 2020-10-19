@@ -71,7 +71,7 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 <span class="comment">%Dirichlet B.C. at left(0&lt;y&lt;1 at x=0; u=10), Top(0&lt;x&lt;1 at y=1; u=50) and Bottom(0&lt;x&lt;1 at y=0; u=50)</span>
 <span class="comment">%Author Md Rysul Kabir</span>
 <span class="comment">%Date 4/29/18</span>
-</pre><p><img vspace="5" hspace="5" src="Dirichlet.png" alt=""> </p><p><b>EQUATION TO BE SOLVED FOR THE PROBLEM:</b></p><p>Steady State Diffusion Equation, <img src="ADI_cond_dirichlet_eq10695079136508017115.png" alt="$${\nabla ^2u=0} $$"></p><pre class="codeinput"><span class="keyword">function</span> m = ADI_cond_dirichlet
+</pre><p><img vspace="5" hspace="5" src="images/Dirichlet.png" alt=""> </p><p><b>EQUATION TO BE SOLVED FOR THE PROBLEM:</b></p><p>Steady State Diffusion Equation, <img src="images/ADI_cond_dirichlet_eq10695079136508017115.png" alt="$${\nabla ^2u=0} $$"></p><pre class="codeinput"><span class="keyword">function</span> m = ADI_cond_dirichlet
 mx=40; my=40;
 nx=mx+1; ny=my+1;
 lx=1; ly=1;
@@ -121,7 +121,7 @@ m=uiter';
 [C,H]=contourf(x,y,m,10,<span class="string">'k-'</span>);colormap;
 clabel(C,H,<span class="string">'LabelSpacing'</span>,500);
 <span class="keyword">end</span>
-</pre><img vspace="5" hspace="5" src="ADI_cond_dirichlet_01.png" alt=""> <p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2015a</a><br></p></div><!--
+</pre><img vspace="5" hspace="5" src="images/ADI_cond_dirichlet_01.png" alt=""> <p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2015a</a><br></p></div><!--
 ##### SOURCE BEGIN #####
 %ADI method with the implementation of TDMA is used to solve a 2D heat
 %conduction with Dirichlet B.C at the right side (0<y<1 at x=1; u=10)
